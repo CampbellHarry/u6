@@ -76,13 +76,22 @@ section{
     border-radius: 0% !important;
     border-color: transparent !important;
 }
+.titlemain{
+    background-color: black;
+    padding: 2rem;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
 .titlemain h1{
     font-size: 5rem;
     color: #fff;
+    mix-blend-mode: difference;
 }
 .titlemain h2{
     font-size: 1.3rem;
     color: #fff;
+    mix-blend-mode: difference;
 }
 #apply{
     display: flex;
@@ -161,7 +170,6 @@ section{
     width: 100%;
     font-size: 3rem;
     color: white;
-    margin-left: 2rem;
     margin-bottom: 2rem;
 }
 .titlesection::after{

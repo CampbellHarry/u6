@@ -29,3 +29,4 @@ function qualdesc(){
     contentsectionjobs.innerHTML = ``;
     contentsectionjobs.innerHTML = `A level 5 (HND) or a level 6 qualification (Degree) in Web Development, or a related field is essential • any other relevant courses or certification and/or experience of web development is desirable.`
 }
+// scrolling to different sections and will change the header correctly
