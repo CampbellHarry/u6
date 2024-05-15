@@ -30,3 +30,36 @@ function qualdesc(){
     contentsectionjobs.innerHTML = `A level 5 (HND) or a level 6 qualification (Degree) in Web Development, or a related field is essential • any other relevant courses or certification and/or experience of web development is desirable.`
 }
 // scrolling to different sections and will change the header correctly
+function setActiveHeaderOnScroll() {
+    var headerHeight = document.querySelector('header').offsetHeight; 
+
+    // Get all section elements
+    var sections = document.querySelectorAll('section[id]');
+    
+    // Iterate through sections to find the one in view
+    sections.forEach(function(section) {
+        var sectionTop = section.offsetTop - headerHeight;
+        var sectionBottom = sectionTop + section.offsetHeight;
+        var scrollPosition = window.scrollY;
+
+        // Check if the section is in view
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            var sectionId = section.id;
+            var headerElement = document.getElementById(sectionId + 'header');
+
+            // Remove "activeheader" class from all header elements
+            var headerElements = document.querySelectorAll('.headerelement');
+            headerElements.forEach(function(element) {
+                element.classList.remove('activeheader');
+            });
+
+            // Add "activeheader" class to the current section's header element
+            if (headerElement) {
+                headerElement.classList.add('activeheader');
+            }
+        }
+    });
+}
+
+// Call the function whenever the user scrolls
+window.addEventListener('scroll', setActiveHeaderOnScroll);

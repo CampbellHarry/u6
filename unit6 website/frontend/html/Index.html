@@ -6,6 +6,8 @@
     <title>Hot Beans Web</title>
     <link rel="stylesheet" href="/frontend/css/index.css">
     <link rel="stylesheet" href="/frontend/css/header.css">
+    <link rel="stylesheet" href="/frontend/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/frontend/img/favicon.png">
 </head>
 <body>
@@ -84,35 +86,35 @@
             <ul>
                 <a href="#">
                     <li>
-                        <div class="headerelement activeheader">
+                        <div class="headerelement activeheader" id="homeheader">
                             <p>Home</p>
                         </div>
                     </li>
                 </a>
                 <a href="#careers">
                     <li>
-                        <div class="headerelement">
+                        <div class="headerelement" id="careersheader">
                             <p>Careers</p>
                         </div>
                     </li>
                 </a>
                 <a href="#apply">
                     <li>
-                        <div class="headerelement">
+                        <div class="headerelement" id="applyheader">
                             <p>Apply</p>
                         </div>
                     </li>
                 </a>
                 <a href="#courses">
                     <li>
-                        <div class="headerelement">
+                        <div class="headerelement" id="coursesheader">
                             <p>Courses</p>
                         </div>
                     </li>
                 </a>
                 <a href="#contact">
                     <li>
-                        <div class="headerelement">
+                        <div class="headerelement" id="contactheader">
                             <p>Contact</p>
                         </div>
                     </li>
@@ -148,7 +150,7 @@
         <section id="aboutwhoweare">
             <div class="containingsection">
                 <div class="aboutuscontainer">
-                    <h1 class="titlesection">Who are we?-</h1>
+                    <h1 class="titlesection">Who are we?</h1>
                     <div class="contentaboutus">
                         <p>Hot Beans Web is a industry leading website development company based in st helens. Formed in 2020 by John and Harry with their background in computer science and software development their passion and talent swiftly expanded their buisness. <br><br> Now based in a large office in London the company has grown to more then 200 staff<br><br> Hot beans web is a great collaberative enviroment allowing developers to shine!</p>
                     </div>
@@ -168,7 +170,7 @@
                                 <h1>Web Developer - James</h1>
                             </div>
                             <div class="descriptionholder">
-                                <p>James is a senior website developer at Hot Beans Web, He specialises in React, JS, CSS and HTML.</p>
+                                <p>James is a senior website developer at Hot Beans Web, He specialises in React, JS, CSS and HTML. He started as a Junior at Hot beans web!</p>
                             </div>
                         </div>
                         <div class="career">
@@ -179,7 +181,7 @@
                                 <h1>Lead Developer - Harry</h1>
                             </div>
                             <div class="descriptionholder">
-                                <p>James is a senior website developer at Hot Beans Web, He specialises in React, JS, CSS and HTML.</p>
+                                <p>Harry is a lead developer at hot beans web after getting his masters of software engineering and now works at Hot Beans Web for 6 years.</p>
                             </div>
                         </div>
                         <div class="career">
@@ -190,7 +192,7 @@
                                 <h1>Manager - Fin</h1>
                             </div>
                             <div class="descriptionholder">
-                                <p>James is a senior website developer at Hot Beans Web, He specialises in React, JS, CSS and HTML.</p>
+                                <p>Fin is our manager at Hot beans Web. He started from a Junior developer and has been working here for 10 years.</p>
                             </div>
                         </div>
                         <div class="career">
@@ -201,7 +203,7 @@
                                 <h1>Backend Developer - Jane</h1>
                             </div>
                             <div class="descriptionholder">
-                                <p>James is a senior website developer at Hot Beans Web, He specialises in React, JS, CSS and HTML.</p>
+                                <p>Jane is a backend developer at Hot Beans web. Specilising in Node.js she learnt her trade from starting from a junior developer.</p>
                             </div>
                         </div>
                     </div>
@@ -232,13 +234,14 @@
                     <input type="text" id="name" name="name" placeholder="Full name">
                     <input type="date" id="email" name="email" placeholder="Email">
                     <input type="email" id="email" name="email" placeholder="Phone number">
-                    <input type="email" id="email" name="email" placeholder="Date of birth">
+                    <input type="date" id="email" name="email" placeholder="Date of birth">
                     <input type="email" id="email" name="email" placeholder="First line of address">
                     <select id="dropdown" name="dropdown">
-                        <option value="option1">Applying for:</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                        <option value="option4">Option 4</option>
+                        <option value="option1" disabled>Applying for:</option>
+                        <option value="react">React Course</option>
+                        <option value="frontend">Frontend Course</option>
+                        <option value="backend">Backend Course</option>
+                        <option value="fullstack">Full Stack Course</option>
                     </select>
                     <textarea id="message" name="message" placeholder="Enter your message"></textarea>
 
@@ -247,9 +250,112 @@
             </div>
             </div>
         </section>
+        <section id="courses">
+            <div class="containingsection">
+                <div class="containinginner">
+                    <h1 class="titlesection" style="color: #000;">Courses</h1>
+                    <div class="coursescontainer">
+                        <a href="https://www.coursera.org/learn/react-basics" target="_blank">
+                            <div class="course">
+                                <div class="coursetitle">
+                                    <h1>React Course</h1>
+                                </div>
+                                <div class="coursedescription">
+                                    <p>Our React course is designed to help you learn the fundamentals of React and build your own web applications. The course covers everything from setting up your development environment to building complex web applications using React and other modern web technologies.</p>
+                                </div>
+                                <div class="totaldate">
+                                    <p><code>Duration: 6 weeks</code></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.udemy.com/topic/front-end-web-development/ target="_blank"">
+                            <div class="course">
+                                <div class="coursetitle">
+                                    <h1>Frontend Course</h1>
+                                </div>
+                                <div class="coursedescription">
+                                    <p>Our frontend course is designed to help you learn the fundamentals of frontend and build your own website. The course covers everything from setting up your development environment to building websites using HTML, CSS and JavaScript.</p>
+                                </div>
+                                <div class="totaldate">
+                                    <p><code>Duration: 2 weeks</code></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.freecodecamp.org/learn/back-end-development-and-apis/" target="_blank">
+                            <div class="course">
+                                <div class="coursetitle">
+                                    <h1>Backend Course</h1>
+                                </div>
+                                <div class="coursedescription">
+                                    <p>Our backend course is designed to help you learn the fundamentals of backend and build your own web applications. The course covers everything from setting up your development environment to building complex web applications using Node.js and other modern web technologies.</p>
+                                </div>
+                                <div class="totaldate">
+                                    <p><code>Duration: 4 weeks</code></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer" target="_blank">
+                            <div class="course">
+                                <div class="coursetitle">
+                                    <h1>Full Stack Course</h1>
+                                </div>
+                                <div class="coursedescription">
+                                    <p>Our full stack course is designed to help you learn the fundamentals of full stack development and build your own web applications. The course covers everything from setting up your development environment to building complex web applications using React, Node.js and other modern web technologies.</p>
+                                </div>
+                                <div class="totaldate">
+                                    <p><code>Duration: 18 weeks</code></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="containingsection">
+                <div class="containinginner">
+                    <h1 class="titlesection" style="color: #000;">Contact</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1322.7864585389163!2d-0.1478499593541701!3d51.494681550760895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760521f595c825%3A0xe1d17e8c5c4e55de!2sBelgrave%20House%2C%2076%20Buckingham%20Palace%20Rd%2C%20London%20SW1W%209TQ!5e0!3m2!1sen!2suk!4v1715523569590!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    <form>
+                        <input type="text" id="name" name="name" placeholder="Full name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="text" id="textsubject"  placeholder="Subject">
+                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+    
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <div class="containerfooter">
+            <div class="containerbottomfooter">
+                <div class="rightsideinformation">
+                    <div class="rowlearning">
+                        <ul>
+                            <h2 class="ubuntu-mono-bold">Hot Beans Web</h2>
+                            <li><a href="">76 Buckingham Palace Road, London SW1W 9TQ</a></li>
+                            <li><a href="">0335 743 4856</a></li>
+                            <li><a href="mailto:hcampb599@student.sthelens.ac.uk">hotbeansweb@hotbeansweb.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leftsideinformation">
+                    <div class="topside">
+                        <img src="/frontend/img/logo.png" alt="HCyber Logo">
+                        <a href="https://hdev.uk">
+                            <p class="ubuntu-mono-bold">By Harry Campbell</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="verybottomcontainer">
+                <div class="socials">
+                    <a href="https://www.linkedin.com/company/98879272/feed/posts/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/CampbellHarry" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="/frontend/js/header.js"></script>
