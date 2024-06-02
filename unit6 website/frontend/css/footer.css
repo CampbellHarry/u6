@@ -5,7 +5,8 @@ footer{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    padding-bottom: 5rem;
+    height: auto;
+    padding-bottom: 40px;
 }
 .containerfooter{
     padding-right: 55px;
@@ -39,7 +40,7 @@ footer{
     justify-content: space-between;
     color: white;
     gap: 5rem;
-    margin-top: 3rem;
+    margin-top: 12rem;
 }
 .verybottomcontainer{
     border-top: solid 1px rgb(177, 177, 177);
@@ -48,7 +49,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: -3rem;
     justify-content: space-between;
     color: white;
 }
@@ -95,7 +95,6 @@ footer{
 .rowlearning h2{
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
 }
 .rowlearning ul{
     display: flex;
@@ -114,15 +113,7 @@ footer{
     width: 30%;
     gap: 4rem;
 }
-.custom-shape-divider-bottom-1713643427 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+
 .topside a{
     color: rgb(110, 110, 110);
     font-weight: 600;

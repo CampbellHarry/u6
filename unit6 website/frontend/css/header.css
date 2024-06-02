@@ -7,6 +7,7 @@
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 10%, rgba(139, 139, 139, 0.2) 27%, rgba(104, 104, 104, 0.2) 30%, rgba(8, 8, 8, 0.2) 47%, rgba(0, 0, 0, 0.2) 58%);
         box-shadow: 0 0 10px rgb(255, 255, 255);
         background-color: #fff;
+        z-index: 349899999;
     }
     .headerinnercontainer ul a {
         color: white;
@@ -98,6 +99,7 @@ header {
     padding-bottom: 0.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    z-index: 349899999;
     width: 100%;
     position: fixed;
     align-items: center;

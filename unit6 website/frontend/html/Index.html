@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/frontend/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/frontend/img/favicon.png">
+    <script type="module" src="/frontEnd/js/gasp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.min.js"></script>
 </head>
 <body>
     <div class="mobilesupportmenu">
@@ -150,7 +152,7 @@
         <section id="aboutwhoweare">
             <div class="containingsection">
                 <div class="aboutuscontainer">
-                    <h1 class="titlesection">Who are we?</h1>
+                    <h1 class="titlesection carreerwhois">Who are we?</h1>
                     <div class="contentaboutus">
                         <p>Hot Beans Web is a industry leading website development company based in st helens. Formed in 2020 by John and Harry with their background in computer science and software development their passion and talent swiftly expanded their buisness. <br><br> Now based in a large office in London the company has grown to more then 200 staff<br><br> Hot beans web is a great collaberative enviroment allowing developers to shine!</p>
                     </div>
@@ -160,11 +162,11 @@
         <section id="careers">
             <div class="containingsection">
                 <div class="containinginner">
-                    <h1 class="titlesection" style="color: #000;">Careers</h1>
+                    <h1 class="titlesection carreeragsap" style="color: #000;">Careers</h1>
                     <div class="careercontainer">
                         <div class="career">
                             <div class="imageholder">
-                                <img src="/frontend/img/images (2).jpeg">
+                                <img src="/frontend/img/images (2).jpeg" alt="James">
                             </div>
                             <div class="titleholder">
                                 <h1>Web Developer - James</h1>
@@ -175,7 +177,7 @@
                         </div>
                         <div class="career">
                             <div class="imageholder">
-                                <img src="/frontend/img/English-singer-songwriter-actor-Harry-Styles-2020.webp">
+                                <img alt="harry" src="/frontend/img/English-singer-songwriter-actor-Harry-Styles-2020.webp">
                             </div>
                             <div class="titleholder">
                                 <h1>Lead Developer - Harry</h1>
@@ -186,7 +188,7 @@
                         </div>
                         <div class="career">
                             <div class="imageholder">
-                                <img src="/frontend/img/65623927.webp">
+                                <img src="/frontend/img/65623927.webp" alt="fin">
                             </div>
                             <div class="titleholder">
                                 <h1>Manager - Fin</h1>
@@ -197,7 +199,7 @@
                         </div>
                         <div class="career">
                             <div class="imageholder">
-                                <img src="/frontend/img/1644265559200.jpeg">
+                                <img src="/frontend/img/1644265559200.jpeg" alt="Jane ">
                             </div>
                             <div class="titleholder">
                                 <h1>Backend Developer - Jane</h1>
@@ -213,7 +215,7 @@
         <section id="apply">
             <div class="containingsection">
                 <div class="containinginner">
-                    <h1 class="titlesection" style="color: black;">Apply to Us</h1>
+                    <h1 class="titlesection applgsap" style="color: black;">Apply to Us</h1>
                     <div class="descriptioncontainerjob">
                         <div class="topsection">
                             <div class="blocksection activeblocksection" id="jobdesc" onclick="jobdesc()">
@@ -230,18 +232,15 @@
                             <p id="contentsectionjobs">Hot beans web is looking for junior web developer to join our team. The ideal candidate will have a strong understanding of web development and be able to work in a fast-paced environment. The candidate will be responsible for developing and maintaining web applications, as well as working with the team to develop new features and functionality. The candidate should have experience with HTML, CSS, JavaScript, and other web technologies.</p>
                         </div>
                     </div>
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Full name">
-                    <input type="date" id="email" name="email" placeholder="Email">
-                    <input type="email" id="email" name="email" placeholder="Phone number">
-                    <input type="date" id="email" name="email" placeholder="Date of birth">
-                    <input type="email" id="email" name="email" placeholder="First line of address">
+                <form onsubmit="alert('submit!');return false">
+                    <input type="text" id="name" required name="name" minlength="5" maxlength="60" placeholder="Full name">
+                    <input type="email" id="email" required name="email" placeholder="Email">
+                    <input type="number" id="phonenumber" required name="email" placeholder="Phone number">
+                    <input type="date" id="dob" required name="date" placeholder="Date of birth">
+                    <input type="text" id="address" required name="address" placeholder="First line of address">
                     <select id="dropdown" name="dropdown">
                         <option value="option1" disabled>Applying for:</option>
-                        <option value="react">React Course</option>
-                        <option value="frontend">Frontend Course</option>
-                        <option value="backend">Backend Course</option>
-                        <option value="fullstack">Full Stack Course</option>
+                        <option value="juniordev">Junior Developer</option>
                     </select>
                     <textarea id="message" name="message" placeholder="Enter your message"></textarea>
 
@@ -253,7 +252,7 @@
         <section id="courses">
             <div class="containingsection">
                 <div class="containinginner">
-                    <h1 class="titlesection" style="color: #000;">Courses</h1>
+                    <h1 class="titlesection coursesgasp" style="color: #000;">Courses</h1>
                     <div class="coursescontainer">
                         <a href="https://www.coursera.org/learn/react-basics" target="_blank">
                             <div class="course">
@@ -268,7 +267,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.udemy.com/topic/front-end-web-development/ target="_blank"">
+                        <a href="https://www.udemy.com/topic/front-end-web-development/" target=_blank">
                             <div class="course">
                                 <div class="coursetitle">
                                     <h1>Frontend Course</h1>
@@ -314,14 +313,14 @@
         <section id="contact">
             <div class="containingsection">
                 <div class="containinginner">
-                    <h1 class="titlesection" style="color: #000;">Contact</h1>
+                    <h1 class="titlesection contactgasp" style="color: #000;">Contact</h1>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1322.7864585389163!2d-0.1478499593541701!3d51.494681550760895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760521f595c825%3A0xe1d17e8c5c4e55de!2sBelgrave%20House%2C%2076%20Buckingham%20Palace%20Rd%2C%20London%20SW1W%209TQ!5e0!3m2!1sen!2suk!4v1715523569590!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    <form>
-                        <input type="text" id="name" name="name" placeholder="Full name">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="text" id="textsubject"  placeholder="Subject">
-                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-    
-                        <button type="submit">Send</button>
+                    <form onsubmit="alert('submit!');return false">
+                        <input type="text" required id="name" name="name" placeholder="Full name">
+                        <input type="email" required id="email" name="email" placeholder="Email">
+                        <input type="text" required id="textsubject"  placeholder="Subject">
+                        <textarea id="message" required name="message" placeholder="Enter your message"></textarea>
+                        <button type="submit" required id="formsend">Send</button>
                     </form>
                 </div>
             </div>
